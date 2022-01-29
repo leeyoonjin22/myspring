@@ -18,16 +18,17 @@
 <h2 >후기 편집하기</h2>
 </div>
 
+
 <form:form commandName="boardVO" method="POST" action="../editok">
 	<input type="hidden" name="seq" value="${boardVO.getSeq()}">
 	<div id="box2">
 	<table id="edit" style="margin-left: auto; margin-right: auto;">
-		<tr><td style="margin-top:40px;">제목</td><td><input type="text" value="${boardVO.getTitle()}" name="title"/></td></tr>
-		<tr><td style="font-family: 'Ubuntu', sans-serif;">감독</td><td><input type="text" value="${boardVO.getDirector()}"name="director"/></td></tr>
-		<tr><td style="font-family: 'Ubuntu', sans-serif;">한줄 대사</td><td><textarea cols="50" rows="5" name="dialogue">${boardVO.getDialogue()}</textarea></td></tr>
-		<tr><td style="font-family: 'Ubuntu', sans-serif;">추천</td><td><input type="text" value="${boardVO.getRecommend()}" name="recommend" /></tr>
+		<tr><td style="margin-top:40px;">이름</td><td><input type="text" value="${boardVO.getTitle()}" name="title"/></td></tr>
+		<tr><td style="font-family: 'Ubuntu', sans-serif;">나이</td><td><input type="text" value="${boardVO.getDirector()}"name="director"/></td></tr>
+		<tr><td style="font-family: 'Ubuntu', sans-serif;">자기소개</td><td><textarea cols="50" rows="5" name="dialogue">${boardVO.getDialogue()}</textarea></td></tr>
+		<tr><td style="font-family: 'Ubuntu', sans-serif;">주소</td><td><input type="text" value="${boardVO.getActor()}" name="recommend" /></tr>
 		
-		<tr><td style="font-family: 'Ubuntu', sans-serif;">글쓴이</td><td><input type="text" value="${boardVO.getWriter()}" name="writer"/></td></tr>
+		<tr><td style="font-family: 'Ubuntu', sans-serif;">좋아하는것</td><td><input type="text" value="${boardVO.getWriter()}" name="writer"/></td></tr>
 	</table>
 	</div>
 	<button type="submit" value="Submit">수정하기</button>

@@ -28,7 +28,7 @@ public class BoardController {
 		int i = boardService.insertBoard(vo);
 		
 		if(i == 0) System.out.println("Error! Create Failed");
-		else System.out.println(vo.getWriter() + "님이 후기를 작성하셨습니다.");
+		else System.out.println(vo.getWriter() + "님이 정보를 등록하였습니다.");
 		
 		return "redirect:list";
 	}
@@ -47,7 +47,7 @@ public class BoardController {
 		int i = boardService.updateBoard(vo);
 		
 		if(i == 0) System.out.println("Error! Update Failed");
-		else System.out.println("후기 수정 완료.");
+		else System.out.println("정보 수정 완료.");
 		
 		return "redirect:list";
 	}
@@ -57,7 +57,7 @@ public class BoardController {
 		int i = boardService.deleteBoard(id);
 		
 		if(i == 0) System.out.println("Error! delete Failed");
-		else System.out.println("후기 삭제 완료.");
+		else System.out.println("정보 삭제 완료.");
 		
 		return "redirect:../list";
 	}

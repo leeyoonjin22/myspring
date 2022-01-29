@@ -1,6 +1,6 @@
 package com.spring.myspring;
 
-import java.util.Date;
+
 
 public class BoardVO {
 	private int seq;
@@ -10,9 +10,7 @@ public class BoardVO {
 	private String actor;
 	private String dialogue;
 	private String content;
-	private boolean recommend;
-	//private Date regdate;
-	//private int cnt;
+
 	public int getSeq() {
 		return seq;
 	}
@@ -55,18 +53,7 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public boolean isRecommend() {
-		return recommend;
-	}
-	public void setRecommend(boolean recommend) {
-		this.recommend = recommend;
-	}
-//	public Date getRegdate() {
-//		return regdate;
-//	}
-//	public void setRegdate(Date regdate) {
-//		this.regdate = regdate;
-//	}
+
 	
 	
 }

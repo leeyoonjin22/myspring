@@ -21,9 +21,9 @@
 	<table id="edit" style="float : left; margin-left: auto; margin-right: auto;">
 		<tr><td style="margin-top:40px;">이름</td><td><input type="text" name="title"/></td></tr>
 		<tr><td style="font-family: 'Ubuntu', sans-serif;">나이</td><td><input type="text" name="director"/></td></tr>
-		<tr><td style="font-family: 'Ubuntu', sans-serif;">성별</td><td><textarea cols="50" rows="5" name="dialogue"></textarea></td></tr>
-		<tr><td style="font-family: 'Ubuntu', sans-serif;">주소</td><td><input type="text" name="recommend"/> </td></tr>
-		<tr><td style="font-family: 'Ubuntu', sans-serif;">자기소개</td><td><input type="text" name="writer"/></td></tr>
+		<tr><td style="font-family: 'Ubuntu', sans-serif;">자기소개</td><td><textarea cols="50" rows="5" name="dialogue"></textarea></td></tr>
+		<tr><td style="font-family: 'Ubuntu', sans-serif;">주소</td><td><input type="text" name="actor"/> </td></tr>
+		<tr><td style="font-family: 'Ubuntu', sans-serif;">좋아하는것</td><td><input type="text" name="writer"/></td></tr>
 	</table>
 	</div>
 	<button type="button" onclick="location.href='./list'" style="font-family: 'Ubuntu', sans-serif;">목록보기</button>

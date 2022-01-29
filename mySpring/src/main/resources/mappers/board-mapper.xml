@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="BoardDAO">
+<mapper namespace="board">
 	<insert id="insertBoard">
-	<!-- insert into BOARD (title, writer, content)values (#{title} , #{writer} , #{content}) -->
-	insert into MOVIE_REVIEW (title, writer, director, actor, dialogue, content, recommend)values (#{title}
-		, #{writer} , #{director}, #{actor}, #{dialogue}, #{content},
-		#{recommend})
+		insert into MOVIE_REVIEW (title, director, dialogue, actor,writer)
+		values 
+		(#{title},#{director},#{dialogue},  #{actor} ,#{writer})
 	</insert>
 	<update id="updateBoard">
-	update MOVIE_REVIEW
+		update MOVIE_REVIEW
 		set title=#{title}, writer=#{writer},
 		director=#{director}, actor=#{actor}, dialogue=#{dialogue},
-		content=#{content}, recommend=#{recommend}
 		where seq=#{seq}
 	</update>
 	<delete id="deleteBoard">
